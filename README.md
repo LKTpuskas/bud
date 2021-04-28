@@ -1,4 +1,6 @@
-# Getting Started
+# Project
+A small app using React, Typescript and Styled-components
+## Getting Started
 Start with `npm install` 
 ## Available Scripts
 
