@@ -252,12 +252,7 @@ function setupFetchStub() {
 }
 
 describe("Content component", () => {
-  beforeEach(() => jest.useFakeTimers());
-
-  afterEach(() => {
-    jest.runOnlyPendingTimers();
-    jest.useRealTimers();
-  });
+ 
   it("should display header text correctly", () => {
     render(<Content />);
     const message = "bud";
@@ -265,8 +260,7 @@ describe("Content component", () => {
   });
   it("should render api data", async () => {
     global.fetch = jest.fn().mockImplementation(setupFetchStub());
-
-    //jest.advanceTimersByTime(1000);
+    
     await act(() => {
       render(<Content />);
     });

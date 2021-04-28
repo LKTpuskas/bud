@@ -44,8 +44,8 @@ export function Transaction({
           </th>
         </tr>
         {transactions.map(
-          ({ description, category_title, amount, date }, key) => (
-            <tr key={key}>
+          ({ description, category_title, amount, date, id }) => (
+            <tr key={id}>
               <TD>{category_title}</TD>
               <TD>{description}</TD>
               <TD>{amount.value}</TD>
