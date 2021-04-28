@@ -1,5 +1,5 @@
 # Getting Started
-
+Start with `npm install` 
 ## Available Scripts
 
 ### `npm run start`
